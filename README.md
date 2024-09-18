@@ -11,10 +11,18 @@ This report documents the steps taken for an exploratory data analysis (EDA) on 
 The primary objective of the analysis is to explore socio-economic disparities across different demographic groups, identify trends in employment and income, and understand how various factors are interrelated. PySpark was chosen due to its ability to efficiently process large datasets distributed across multiple nodes, making it ideal for handling census-scale data.
 
 ---
+## 2. Dataset Description
 
-## 2. Data Loading
+The dataset used in this analysis is sourced from the U.S. Census Bureau and contains detailed demographic and socio-economic information on various population groups across the United States. The dataset includes the following key variables:
 
-The data was loaded into a PySpark DataFrame, leveraging PySpark’s distributed computing capability. Given the large size of census data, PySpark allows for optimized data loading and transformation, reducing processing time. Efficient data loading is critical in ensuring that subsequent analysis is performed smoothly on large-scale datasets.
+- **Age:** Numerical variable representing the age of individuals.
+- **Gender:** Categorical variable representing the gender of individuals (Male, Female).
+- **Race/Ethnicity:** Categorical variable representing the race or ethnicity of individuals.
+- **Income:** Numerical variable representing the annual income of individuals.
+- **Employment Status:** Categorical variable indicating whether an individual is employed, unemployed, or not in the labor force.
+- **Poverty Status:** Categorical variable indicating whether an individual is below the poverty line.
+
+The dataset is extensive and covers a large population sample, making it well-suited for identifying trends and performing detailed analysis on socio-economic conditions across the country. Due to the large size of the data, PySpark was used for efficient distributed processing. The data was loaded into a PySpark DataFrame, leveraging PySpark’s distributed computing capability. Given the large size of census data, PySpark allows for optimized data loading and transformation, reducing processing time. Efficient data loading is critical in ensuring that subsequent analysis is performed smoothly on large-scale datasets.
 
 ---
 
